@@ -29,7 +29,8 @@ db.connect((err) => {
 
 app.get("/user", (req, res) => {
   db.query(
-    "SELECT * FROM users WHERE email = '" + req.query.email + "'",
+    "SELECT * FROM users WHERE email = ?",
+    [req.query.email],
     (err, result) => {
       if (err) throw err;
       res.json(result);

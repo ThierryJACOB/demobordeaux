@@ -1,7 +1,3 @@
-// test d'erreur
-// const maVar = require("blabla");
-// db.query();
-// version de Copilot
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const mysql = require("mysql2/promise");
@@ -60,5 +56,3 @@ app.post("/login", async (req, res) => {
 app.listen(3000, () => {
   console.log("Secure server started on port 3000");
 });
-
-// version d origine

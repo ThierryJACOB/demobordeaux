@@ -1,3 +1,5 @@
+// test d'erreur
+const maVar = require("blabla");
 // version de Copilot
 const express = require("express");
 const jwt = require("jsonwebtoken");
